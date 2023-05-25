@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGY Rental Service</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootsrap Css stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styyle.css">
+
+  <!-- Font Awesome scripts -->
+  <script src="https://kit.fontawesome.com/3db7f1c7db.js" crossorigin="anonymous"></script>
+
+        <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+    /********** Template CSS **********/
+:root {
+    --primary: #00B98E;
+    --secondary: #FF6922;
+    --light: #EFFDF5;
+    --dark: #0E2E50;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+body{
+    background-color: #fff;
+}
+ 
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+/*** Icon ***/
+.icon {
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF !important;
+    border-radius: 50px;
+    border: 1px dashed var(--primary) !important;
+}
+    .dropbtn {
+      color: rgba(255,255,255,.5);
+      font-size: 1.2rem;
+      border: none;
+      background-color: transparent;
+      padding: 0.5rem;
+    }
+    .dropbtn:hover{
+     color: rgba(255,255,255,.75)
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+  
+    </style>
+
+  <section class="coloured-section" id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">
+          <i class="fa-solid fa-house"></i> SAGY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Property</button>
+                <div class="dropdown-content">
+                  <a href="#property-type">Property type</a>
+                  <a href="#cta">Web app</a>
+                </div>
+              </div>
+              
+            </li>
+            
+            <a class="nav-link" href="#pricing">Services</a>
+          </li>
+            </li>
+              <a class="nav-link" href="#features">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+            <button type="button" class="btn btn-danger">
+              <a href="./LoginForm.html" class="text-decoration-none">
+              Add Property
+              </a>
+            </button>
+
+          </ul>
+
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <h1 class="aria">Explore the best rental services</h1>
+          
+          <button type="button" class="btn btn-success btn-lg">
+            Learn  more <i class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <img class="iphone" src="images/for-rent.png" alt="iphone-mockup">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="row">
+
+      <div class=" text col-lg-4">
+
+        <i class=" color fa-solid fa-circle-check fa-3x"></i>
+        <h3 class="erica">Easy to use.</h3>
+        <p class="tex">So easy to use, even anyone can do it.</p>
+
+      </div>
+
+      <div class=" text col-lg-4">
+
+        <i class=" color fa-solid fa-bullseye fa-3x"></i>
+        <h3 class="erica">Elite Clientele</h3>
+        <p>We have all types of flat and buildings that you needed.</p>
+
+      </div>
+
+      <div class=" text col-lg-4 ">
+
+        <i class=" color fa-solid fa-heart fa-3x"></i>
+        <h3 class="erica">Guaranteed to work.</h3>
+        <p>If you have any kind of problems in renting, you can share it.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+
+  <section class="coloured-section" id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <h2>I've found the best rental service  for my needed Apartments.</h2>
+          <img class="imagess" src="images/gagan.PNG" alt="dog-profile">
+          <em>Gagan, Kathmandu</em>
+
+        </div>
+        
+        <div class="carousel-item">
+
+          <h2>For the best flat, I have to search in different site but now I got it in
+            one site with app.</h2>
+          <img class="imagess" src="images/alish.jpg" alt="lady-profile">
+          <em>Alish Shahi,Balkumari</em>
+
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Press -->
+
+  <section class="coloured-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="fontt">A Plan for best rental services</h2>
+    <p>Simple and affordable price plans for your rental services.</p>
+
+    <div class="row">
+
+
+      <div class=" pricing-col col-lg-4 col-md-6">
+
+        <div class="card">
+
+          <div class="card-header">
+
+            <h3 class="sent">Rental services</h3>
+
+          </div>
+
+          <div class="card-body">
+
+            <h2>Free</h2>
+            <p>5x Access Per Day</p>
+            <p>10 Messages Per Day</p>
+            
+            <button class="btn btn-outline-dark btn-lg btn-block" type="button">Sign Up</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class=" pricing-col col-lg-4 col-md-6">
+
+        <div class="card">
+
+          <div class="card-header">
+
+            <h3 class="sent">Apartments</h3>
+
+          </div>
+
+          <div class="card-body">
+
+            <h2>$499 / mo</h2>
+            <p>Unlimited Access</p>
+            <p>Unlimited Messages</p>
+            
+            <button class="btn btn-dark btn-lg btn-block" type="button">Sign Up</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class=" pricing-col col-lg-4">
+
+        <div class="card">
+
+          <div class="card-header">
+
+            <h3 class="sent">Buildings</h3>
+
+          </div>
+
+          <div class="card-body">
+
+            <h2>$999 / mo</h2>
+            <p>Unlimited Access</p>
+            <p>Unlimited Messages</p>
+            
+            <button class="btn btn-dark btn-lg btn-block" type="button">Sign Up</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="propertytypes" id="property-type">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Property Types</h1>
+                <p>we provide different types of property like Apartment,rooms,Building and Villa</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                              <img class="img-fluid" src="images/apartments.png" alt="Icon">
+                            </div>
+                            <h6>Apartment</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/villa.png" alt="Icon">
+                            </div>
+                            <h6>Villa</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/home.png" alt="Icon">
+                            </div>
+                            <h6>Home</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/office-building.png" alt="Icon">
+                            </div>
+                            <h6>Office</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/building.png" alt="Icon">
+                            </div>
+                            <h6>Building</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/townhouse.png" alt="Icon">
+                            </div>
+                            <h6>Townhouse</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/shopping-cart.png" alt="Icon">
+                            </div>
+                            <h6>Shop</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="images/private-garage.png" alt="Icon">
+                            </div>
+                            <h6>Garage</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+<section id="contact">
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Nepal</option>
+      <option value="canada">Bangladesh</option>
+      <option value="usa">India</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+  <!-- Call to Action -->
+
+  <section class="coloured-section" id="cta">
+
+    <h3 class="h33">Find the your dream home today.</h3>
+    <button class="btn btn-dark btn-lg down-bn" type="button"> <i class="fa-brands fa-apple"></i> Download</button>
+    <button class="btn btn-light btn-lg" type="button"> <i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <a href="https://www.twitter.com/"><i class="fa-brandss fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/"><i class=" fa-brandss  fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class=" fa-brandss  fa-brands fa-instagram"></i></a>
+    <p>© Copyright 2023 SAGY Developer</p>
+
+  </footer>
+
+</body>
+</html>

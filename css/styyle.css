@@ -1,0 +1,230 @@
+body {
+    text-align: center;
+}
+
+.coloured-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Title */
+
+#title {
+    text-align: left;
+}
+
+.aria {
+    font-size: 3.5em;
+    line-height: 1.5;
+    color: white;
+}
+
+
+.container-fluid {
+    padding: 3% 7% 7%;
+
+}
+
+
+
+
+/* Navigation section */
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.fas {
+    padding-right: 5px;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+
+
+
+/* buttons section */
+
+.download-bn {
+    margin: 5% 3% 5% 0;
+}
+
+.iphone {
+    width: 50%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 40%;
+
+}
+
+
+
+
+/* Features section */
+
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+
+.erica {
+    font-size: 1.5rem;
+}
+
+.color {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.color:hover {
+    color: #ff4c68;
+}
+
+
+
+
+/* Testimonials section */
+
+#testimonials {
+
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+h2 {
+    line-height: 1.5;
+    font-size: 2rem;
+}
+
+.imggg{
+    width: 80px;
+}
+
+.imagess {
+    width: 15%;
+    border-radius: 100%;
+    margin: 4px;
+}
+
+
+
+
+/* Press section */
+
+#press {
+    padding-top: 6px;
+    background-color: #ef8172;
+}
+
+.press-logo {
+    width: 20%;
+    margin: 10px 20px 40px;
+}
+
+
+
+
+/* Pricing section */
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.fontt {
+    font-size: 3rem;
+}
+
+
+
+
+/* Call to action section */
+
+#cta {
+    padding: 3% 15%;
+
+}
+
+.h33 {
+    padding-top: 4%;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.down-bn {
+    margin: 5% 3% 5% 0;
+}
+
+
+
+
+/* Footer section */
+
+#footer {
+    padding: 5% 15%;
+    background-color: lightblue;
+}
+
+.fa-brandss {
+    padding: 2%;
+}
+
+.fa-brandss:hover {
+    color: blue;
+}
+
+/* Media Queries section */
+
+@media(max-width:990px) {
+    #title {
+        text-align: center;
+    }
+
+    .iphone {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #footer {
+        padding: 8% 15%;
+    }
+}
